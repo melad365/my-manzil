@@ -5,9 +5,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
       {/* Header over the hero image */}
-      <header className="absolute w-full top-0 left-0 z-10 bg-transparent shadow-none p-4">
+      {/* <header className="absolute w-full top-0 left-0 z-10 bg-transparent shadow-none p-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
-          {/* Use the logo with a transparent background */}
           <Image
             src="/B9slYC01.svg"
             alt="myManzil Logo"
@@ -15,11 +14,77 @@ export default function Home() {
             height={80}
             priority
           />
-          <nav className="space-x-4">
-            <a href="#" className="text-white hover:text-blue-600">Buy</a>
-            <a href="#" className="text-white hover:text-blue-600">Rent</a>
-            <a href="#" className="text-white hover:text-blue-600">About</a>
+          <nav className="flex flex-grow justify-center space-x-8">
+            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
+              Buy
+            </a>
+            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
+              Rent
+            </a>
+            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
+              About
+            </a>
           </nav>
+        </div>
+      </header> */}
+      <header className="absolute w-full top-0 left-0 z-10 bg-transparent shadow-none p-4">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="md:flex md:items-center md:gap-12">
+              <a className="block text-teal-600" href="#">
+                <span className="sr-only">Home</span>
+                <Image
+                  src="/B9slYC01.svg"
+                  alt="myManzil Logo"
+                  width={170}
+                  height={80}
+                  priority
+                />
+              </a>
+            </div>
+
+            <div className="hidden md:block">
+              <nav aria-label="Global">
+                <ul className="flex items-center gap-12 text-xl font-sans">
+                  <li>
+                    <a className="hover-scale text-white font-medium" href="#"> Buy </a>
+                  </li>
+
+                  <li>
+                    <a className="hover-scale text-white font-medium" href="#"> Rent </a>
+                  </li>
+
+                  <li>
+                    <a className="hover-scale text-white font-medium" href="#"> Sell </a>
+                  </li>
+
+                  <li>
+                    <a className="hover-scale text-white font-medium" href="#"> About </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="sm:flex sm:gap-4">
+                <a
+                  className="hover-scale rounded-md bg-teal-600 px-6 py-3 text-base font-medium text-white shadow-sm"
+                  href="#"
+                >
+                  Login
+                </a>
+
+                
+                <a
+                  className="hover-scale rounded-md bg-gray-100 px-6 py-3 text-base font-medium !text-black shadow-sm"
+                  href="#"
+                >
+                  Register
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -36,12 +101,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center text-white pt-20">
-          <h2 className="text-4xl font-semibold mb-4">Find Your Perfect Home</h2>
-          <p className="text-xl mb-6">Browse homes for rent or sale across the country</p>
-          {/* <div className="bg-white p-4 rounded-lg shadow-md flex gap-4 justify-center">
-            <input type="text" placeholder="Search by location..." className="w-2/3 p-2 border rounded" />
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Search</button>
-          </div> */}
         </div>
       </section>
 
