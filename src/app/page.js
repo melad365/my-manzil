@@ -1,45 +1,15 @@
-
-import Image from 'next/image';
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
-      {/* Header over the hero image */}
-      {/* <header className="absolute w-full top-0 left-0 z-10 bg-transparent shadow-none p-4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <Image
-            src="/B9slYC01.svg"
-            alt="myManzil Logo"
-            width={300}
-            height={80}
-            priority
-          />
-          <nav className="flex flex-grow justify-center space-x-8">
-            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
-              Buy
-            </a>
-            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
-              Rent
-            </a>
-            <a href="#" className="text-white hover:text-blue-600 text-lg font-medium hover:scale-110 transition-transform duration-200">
-              About
-            </a>
-          </nav>
-        </div>
-      </header> */}
       <header className="absolute w-full top-0 left-0 z-10 bg-transparent shadow-none p-4">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
               <a className="block text-teal-600" href="#">
                 <span className="sr-only">Home</span>
-                <Image
-                  src="/B9slYC01.svg"
-                  alt="myManzil Logo"
-                  width={170}
-                  height={80}
-                  priority
-                />
+                <Image src="/B9slYC01.svg" alt="myManzil Logo" width={170} height={80} priority />
               </a>
             </div>
 
@@ -47,19 +17,31 @@ export default function Home() {
               <nav aria-label="Global">
                 <ul className="flex items-center gap-12 text-xl font-sans">
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#"> Buy </a>
+                    <a className="hover-scale text-white font-medium" href="#">
+                      {' '}
+                      Buy{' '}
+                    </a>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#"> Rent </a>
+                    <a className="hover-scale text-white font-medium" href="#">
+                      {' '}
+                      Rent{' '}
+                    </a>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#"> Sell </a>
+                    <a className="hover-scale text-white font-medium" href="#">
+                      {' '}
+                      Sell{' '}
+                    </a>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#"> About </a>
+                    <a className="hover-scale text-white font-medium" href="#">
+                      {' '}
+                      About{' '}
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -74,14 +56,12 @@ export default function Home() {
                   Login
                 </a>
 
-                
                 <a
                   className="hover-scale rounded-md bg-gray-100 px-6 py-3 text-base font-medium !text-black shadow-sm"
                   href="#"
                 >
                   Register
                 </a>
-
               </div>
             </div>
           </div>
@@ -100,8 +80,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white pt-20">
-        </div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center text-white pt-20"></div>
       </section>
 
       {/* Property Listings Placeholder */}
@@ -126,5 +105,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  )
 }
