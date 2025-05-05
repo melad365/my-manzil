@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,31 +18,27 @@ export default function Home() {
               <nav aria-label="Global">
                 <ul className="flex items-center gap-12 text-xl font-sans">
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#">
-                      {' '}
-                      Buy{' '}
-                    </a>
+                    <Link className="hover-scale text-white font-medium" href="/buy">
+                      Buy
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#">
-                      {' '}
-                      Rent{' '}
-                    </a>
+                    <Link className="hover-scale text-white font-medium" href="/buy">
+                      Rent
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#">
-                      {' '}
-                      Sell{' '}
-                    </a>
+                    <Link className="hover-scale text-white font-medium" href="/buy">
+                      Sell
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="hover-scale text-white font-medium" href="#">
-                      {' '}
-                      About{' '}
-                    </a>
+                    <Link className="hover-scale text-white font-medium" href="/buy">
+                      About
+                    </Link>
                   </li>
                 </ul>
               </nav>
